@@ -1,0 +1,43 @@
+{
+    "type": "number",
+    "title": {
+      "en": "Salt level",
+      "nl": "Zout niveau"
+    },
+    "decimals": 0,
+    "min": 0,
+    "units": {
+      "en": "%"
+    },
+    "chartType": "spline",
+    "desc": {
+      "en": "Salt level in percentage",
+      "nl": "Zout niveau in procent"
+    },
+    "insights": true,
+    "getable": true,
+    "setable": false,
+    "uiComponent": "sensor",
+    "$flow": {
+      "triggers": [
+        {
+          "id": "meter_salt_level_changed",
+          "title": {
+            "en": "The salt level changed",
+            "nl": "Het zout niveau is veranderd"
+          },
+          "tokens": [
+            {
+              "name": "meter_salt_level",
+              "title": {
+                "en": "Salt level",
+                "nl": "Zout niveau"
+              },
+              "type": "number",
+              "example": 25
+            }
+          ]
+        }
+      ]
+    }
+  }

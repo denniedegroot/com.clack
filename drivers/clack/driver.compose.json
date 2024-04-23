@@ -1,0 +1,36 @@
+{
+  "name": {
+    "en": "Clack Reader"
+  },
+  "class": "sensor",
+  "capabilities": [
+    "alarm_salt",
+    "meter_water_capacity_ltr",
+    "meter_water_liter",
+    "meter_water_remaining_ltr",
+    "meter_water_remaining_m3",
+    "meter_salt_level",
+    "clack_chlorinator",
+    "clack_regenerated",
+    "measure_power",
+    "measure_voltage",
+    "measure_current"
+  ],
+  "images": {
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "small": "{{driverAssetsPath}}/images/small.png"
+  },
+  "pair": [
+        {
+            "id": "list_devices",
+            "template": "list_devices",
+            "navigation": {
+                "next": "add_devices"
+            }
+        },
+        {
+            "id": "add_devices",
+            "template": "add_devices"
+        }
+    ]
+}

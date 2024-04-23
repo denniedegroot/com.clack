@@ -1,0 +1,10 @@
+{
+  "title": {
+    "en": "Regenerated on",
+    "nl": "Geregenereerd op"
+  },
+  "type": "string",
+  "getable": true,
+  "setable": false,
+  "uiComponent": "sensor"
+}

@@ -1,0 +1,67 @@
+{
+  "type": "boolean",
+  "title": {
+    "en": "Chlorinator",
+    "nl": "Chlorinator"
+  },
+  "getable": true,
+  "setable": true,
+  "insights": true,
+  "insightsTitleTrue": {
+    "en": "Chlorinator turned on",
+    "nl": "Chlorinator aangezet"
+  },
+  "insightsTitleFalse": {
+    "en": "Chlorinator turned off",
+    "nl": "Chlorinator uitgezet"
+  },
+  "uiComponent": "toggle",
+  "uiQuickAction": false,
+  "$flow": {
+    "triggers": [
+      {
+        "id": "onoff_true",
+        "highlight": true,
+        "title": {
+          "en": "Chlorinator turned on",
+          "nl": "Chlorinator aangezet"
+        }
+      },
+      {
+        "id": "onoff_false",
+        "highlight": true,
+        "title": {
+          "en": "Chlorinator turned off",
+          "nl": "Chlorinator uitgezet"
+        }
+      }
+    ],
+    "conditions": [
+      {
+        "id": "on",
+        "title": {
+          "en": "Chlorinator is turned !{{on|off}}",
+          "nl": "Chlorinator is !{{aan|uit}}"
+        }
+      }
+    ],
+    "actions": [
+      {
+        "id": "on",
+        "highlight": true,
+        "title": {
+          "en": "Turn chlorinator on",
+          "nl": "Zet chlorinator aan"
+        }
+      },
+      {
+        "id": "off",
+        "highlight": true,
+        "title": {
+          "en": "Turn chlorinator off",
+          "nl": "Zet chlorinator uit"
+        }
+      }
+    ]
+  }
+}

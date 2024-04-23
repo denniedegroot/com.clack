@@ -1,0 +1,51 @@
+{
+  "type": "boolean",
+  "title": {
+    "en": "Salt alarm",
+    "nl": "Zout alarm"
+  },
+  "desc": {
+    "en": "True when low salt level has been detected",
+    "nl": "Gaat af als er een te laag zout niveau gedetecteerd wordt"
+  },
+  "insights": true,
+  "insightsTitleTrue": {
+    "en": "Salt alarm turned on",
+    "nl": "Zout alarm ging af"
+  },
+  "insightsTitleFalse": {
+    "en": "Salt alarm turned off",
+    "nl": "Zout alarm ging uit"
+  },
+  "getable": true,
+  "setable": false,
+  "uiComponent": "sensor",
+  "$flow": {
+    "triggers": [
+      {
+        "id": "alarm_salt_true",
+        "highlight": true,
+        "title": {
+          "en": "The salt alarm turned on",
+          "nl": "Het zout alarm gaat aan"
+        }
+      },
+      {
+        "id": "alarm_salt_false",
+        "title": {
+          "en": "The salt alarm turned off",
+          "nl": "Het zout alarm gaat uit"
+        }
+      }
+    ],
+    "conditions": [
+      {
+        "id": "alarm_water",
+        "title": {
+          "en": "The salt alarm is !{{on|off}}",
+          "nl": "Het zout alarm is !{{aan|uit}}"
+        }
+      }
+    ]
+  }
+}
